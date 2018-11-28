@@ -2,6 +2,7 @@ import java.io.{File, PrintWriter}
 
 import arrays.MyArray
 import equality.CaseClassesEqTest
+import recursion.TailRecursion
 
 object Main {
 
@@ -9,6 +10,10 @@ object Main {
 
     // arrays
     val arr: MyArray = new MyArray
+    val tailRecursion = new TailRecursion
+    val res1 = tailRecursion.factorialTail(2, 1)
+    println("res1: " + res1)
+
     //arr.square[Int](10)
     //println("arr.square[type](10): " + arr.square[Double](10))
     //val twiceAResult = arr.twiceA(arr.square, 2)
